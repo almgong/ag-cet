@@ -1,13 +1,21 @@
+var appPath = "/";
+var viewPath = "/views";
+
 var express = require('express');
 var app = express();
+var path  = require('path');
 
 app.set('port', (process.env.PORT || 5000));
 
-app.use(express.static(__dirname + '/public'));
+//static
+app.use('/static', express.static(__dirname + appPath + 'public'));
+app.use(express.static('public'));
 
-// views is directory for all template files
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
+//set up underscore + html rendering
+var cons = require('consolidate');
+app.engine('html', cons.underscore);
+app.set('view engine', 'html');
+app.set('views', path.join(__dirname, viewPath));
 
 app.get('/', function(request, response) {
   response.render('pages/index');

@@ -1,7 +1,7 @@
 {
   "name": "ag-cet",
   "description": "Redesign of cetengineering.com",
-  "repository": "",
+  "repository": "https://github.com/almgong/ag-cet",
   "logo": "http://node-js-sample.herokuapp.com/node.svg",
   "keywords": ["node", "express", "static"],
   "image": "heroku/nodejs"

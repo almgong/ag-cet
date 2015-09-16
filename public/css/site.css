@@ -1,0 +1,107 @@
+/* Styles for entire site, alphabetical order */
+
+a {
+	color:#999;
+}
+body, html {
+	font-family: 'Ubuntu', sans-serif;
+	background-color:;
+}
+.bt-default-anchor {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	line-height: 20px;
+	position: relative;
+    display: block;
+}
+.divider {
+	color: #D3D3D3;
+}
+footer {
+	background-color: #4b6139;
+	height:300px;
+	color:white;
+}
+.heading {
+	font-family: 'Cabin', sans-serif;
+	font-style: italic;
+}
+.main {
+	position:relative;
+}
+#main-bg {
+	background: url('/static/img/main-bg-img.jpeg') no-repeat;
+	height:400px;
+	background-size:cover;
+}
+.main-bg-overlay {
+	height:400px;
+	position:absolute;
+	top:0;
+	left:15px;
+	right:15px;
+	bottom:0;
+	color:white;
+	font-size:3em;
+}
+#main-bg,
+.main-bg-overlay {
+	border-radius: 5px;
+}
+.main-content {
+	position:absolute;
+	left:0;
+	right:0;
+	top:15%;
+	bottom:0;
+}
+.main-content-nav {
+	position:absolute;
+	bottom:50px;
+	left:0;
+	right:0;
+	width:98%;
+	margin:0 auto;
+}
+.main-navigation {
+	margin-bottom:0;
+}
+.nav > li > a:hover {
+	background-color:transparent;
+	color: #737373;
+}
+.navbar-brand {
+	height:auto;
+}
+.pitch-text {
+	padding:25px;
+}
+.secondary-link {
+	background-color:rgba(189,189,189,.7);
+	width:95%;
+	margin: 0 auto;
+	border-radius:5px;
+	border: 2px solid transparent;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.secondary-link a {
+	color:white;
+	display:block;
+	padding: 10px 15px;
+}
+.secondary-link a:hover {
+	text-decoration: none;
+}
+.secondary-navigation {
+	text-align:center;
+	font-style:normal;
+	font-size:18px;
+}
+.vertical-divider {
+	width:1px;
+	background-color:black;
+}

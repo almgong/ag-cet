@@ -1,13 +1,14 @@
 {
-  "name": "node-js-getting-started",
+  "name": "ag-cet",
   "version": "0.1.5",
-  "description": "A sample Node.js app using Express 4",
+  "description": "A redesign of cetengineering.com",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "ejs": "2.3.3",
+    "consolidate": "",
+    "underscore":"",
     "express": "4.13.3"
   },
   "engines": {
@@ -15,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/almgong/ag-cet"
   },
   "keywords": [
     "node",
     "heroku",
     "express"
   ],
-  "license": "MIT"
+  "license": ""
 }

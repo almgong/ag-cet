@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>ag-cet | Redesign of cetengineering.com</title>
+
+		<!-- stylesheets -->
+		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+		<link href='https://fonts.googleapis.com/css?family=Cabin:400italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="/static/css/site.css" />
+	</head>
+
+	<body>
+		<nav class="navbar main-navigation">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="/"><img alt="brand logo" src="/static/img/logo.gif" height="70" /></a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="top-nav">
+		      
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="/">Home</a></li>
+		        <li><span class="bt-default-anchor divider">|</span></li>
+		        <li><a href="/contact">Contact Us</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="container main">
+
+			
+			<div id="main-bg"></div>
+
+			<!-- overlay and content within -->
+			<div class="main-bg-overlay heading">
+				<div class="main-content">
+					<div class="row pitch">
+						<div class="col-sm-6 pitch-text text-center">
+							Environmental Engineering &amp; Consulting
+						</div>
+						<div class="col-sm-6">
+						</div>
+					</div>
+
+					<div class="row secondary-navigation main-content-nav">
+						<div class="col-sm-3">
+							<div class="secondary-link">
+								<a href="/">Home</a>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="secondary-link">
+								<a href="">Company Profile</a>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="secondary-link">
+								<a href="">Scope of Services</a>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="secondary-link">
+								<a href="">Contact Us</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- bottom page content -->
+			<div class="row">
+				<div class="col-sm-4">
+					1
+				</div>
+				<div class="col-sm-4">
+					2
+				</div>
+				<div class="col-sm-4">
+					3
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			Hello
+		</footer>
+
+	</body>
+
+	<!-- script at end of page to prevent render blocking -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('.secondary-link').hover( 
+			function() {
+				$(this).css('border', '2px solid white').css('background-color', '#7FA5CC');
+				
+			},
+			function() {
+				$(this).css('border', '2px solid transparent').css('background-color', 'rgba(189,189,189,.7)');
+			}	
+		);
+	});
+	</script>
+</html>
