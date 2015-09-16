@@ -7,12 +7,49 @@ body, html {
 	font-family: 'Ubuntu', sans-serif;
 	background-color:;
 }
+.bottom-content > div {
+	padding:50px;
+	min-height:250px;
+	font-size:16px;
+}
+.brand {
+	color:#7FA5CC;
+	font-size:1.2em;
+}
 .bt-default-anchor {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	line-height: 20px;
 	position: relative;
     display: block;
+}
+.animated {
+	-webkit-animation-duration: .7s;
+	-moz-animation-duration: .7s;
+	-ms-animation-duration: .7s
+	-o-animation-duration: .7s;
+	animation-duration: .7s;
+}
+.delay {
+	-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	-ms-animation-delay: .2s;
+	-o-animation-delay: .2s;
+	animation-delay: .2s;
+}
+.delay-1 {
+	-webkit-animation-delay: .4s;
+	-moz-animation-delay: .4s;
+	-ms-animation-delay: .4s;
+	-o-animation-delay: .4s;
+	animation-delay: .4s;
+}
+.delay-2 {
+	-webkit-animation-delay: .6s;
+	-moz-animation-delay: .6s;
+	-ms-animation-delay: .6s;
+	-o-animation-delay: .6s;
+	animation-delay: .6s;
 }
 .divider {
 	color: #D3D3D3;
@@ -42,11 +79,7 @@ footer {
 	right:15px;
 	bottom:0;
 	color:white;
-	font-size:3em;
-}
-#main-bg,
-.main-bg-overlay {
-	border-radius: 5px;
+	font-size:4em;
 }
 .main-content {
 	position:absolute;
@@ -75,6 +108,10 @@ footer {
 }
 .pitch-text {
 	padding:25px;
+	width:75%;
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
 }
 .secondary-link {
 	background-color:rgba(189,189,189,.7);
@@ -100,6 +137,15 @@ footer {
 	text-align:center;
 	font-style:normal;
 	font-size:18px;
+}
+.single-pitch-block {
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	float:none;
+}
+#top-nav {
+	margin-top:15px;
 }
 .vertical-divider {
 	width:1px;

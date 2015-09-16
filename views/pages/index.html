@@ -2,18 +2,19 @@
 <html>
 
 	<head>
-		<title>ag-cet | Redesign of cetengineering.com</title>
+		<title>Redesign of cetengineering.com</title>
 
 		<!-- stylesheets -->
 		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
 		<link href='https://fonts.googleapis.com/css?family=Cabin:400italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="/static/css/animate.css" />
 		<link rel="stylesheet" type="text/css" href="/static/css/site.css" />
 	</head>
 
 	<body>
 		<nav class="navbar main-navigation">
-		  <div class="container">
+		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav" aria-expanded="false">
@@ -22,7 +23,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="/"><img alt="brand logo" src="/static/img/logo.gif" height="70" /></a>
+		      <a class="navbar-brand" href="/"><img alt="brand logo" src="/static/img/logo.gif" height="50" /></a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -37,16 +38,16 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 
-		<div class="container main">
+		<div class="container-fluid main">
 
 			
-			<div id="main-bg"></div>
+			<div id="main-bg" class="row"></div>
 
 			<!-- overlay and content within -->
 			<div class="main-bg-overlay heading">
 				<div class="main-content">
 					<div class="row pitch">
-						<div class="col-sm-6 pitch-text text-center">
+						<div class="col-sm-12 pitch-text text-center fadeIn animated">
 							Environmental Engineering &amp; Consulting
 						</div>
 						<div class="col-sm-6">
@@ -54,23 +55,18 @@
 					</div>
 
 					<div class="row secondary-navigation main-content-nav">
-						<div class="col-sm-3">
-							<div class="secondary-link">
+						<div class="col-sm-4">
+							<div class="secondary-link animated fadeIn delay">
 								<a href="/">Home</a>
 							</div>
 						</div>
-						<div class="col-sm-3">
-							<div class="secondary-link">
-								<a href="">Company Profile</a>
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="secondary-link">
+						<div class="col-sm-4">
+							<div class="secondary-link animated fadeIn delay-1">
 								<a href="">Scope of Services</a>
 							</div>
 						</div>
-						<div class="col-sm-3">
-							<div class="secondary-link">
+						<div class="col-sm-4">
+							<div class="secondary-link animated fadeIn delay-2">
 								<a href="">Contact Us</a>
 							</div>
 						</div>
@@ -79,15 +75,48 @@
 			</div>
 
 			<!-- bottom page content -->
-			<div class="row">
-				<div class="col-sm-4">
-					1
+			<div class="row panel fadeInUp animated">
+				<div class="bottom-content">
+					<div class="col-sm-12 single-pitch-block">
+						<div class="pitch-desc">
+							<span class="brand">CET Engineering, Inc. </span> is an environmental engineering and consulting company found in 1992. We offer prompt response, efficiency, and confidentiality, cost effectiveness, professional competence and competitive cost.
+						</div>
+						
+					</div>
 				</div>
-				<div class="col-sm-4">
-					2
+			</div>
+
+			
+
+			<div class="row panel" id="row2">
+				<div class="bottom-content">
+					<div class="col-sm-6">
+
+						<div class="pitch-desc">
+							<span class="brand">CET Engineering, Inc. </span> is an environmental engineering and consulting company found in 1992. We offer prompt response, efficiency, and confidentiality, cost effectiveness, professional competence and competitive cost.
+						</div>
+						
+					</div>
+					<div class="col-sm-6">
+						2
+					</div>
 				</div>
-				<div class="col-sm-4">
-					3
+			</div>
+
+			
+
+			<div class="row panel" id="row3">
+				<div class="bottom-content">
+					<div class="col-sm-6">
+
+						<div class="pitch-desc">
+							<span class="brand">CET Engineering, Inc. </span> is an environmental engineering and consulting company found in 1992. We offer prompt response, efficiency, and confidentiality, cost effectiveness, professional competence and competitive cost.
+						</div>
+						
+					</div>
+					<div class="col-sm-6">
+						2
+					</div>
 				</div>
 			</div>
 		</div>
@@ -101,6 +130,8 @@
 	<!-- script at end of page to prevent render blocking -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/jquery.visible.min.js"></script>
+	<script src="/static/js/site.js"></script>
 
 	<script type="text/javascript">
 	$(document).ready(function() {
