@@ -18,7 +18,7 @@ app.set('view engine', 'html');
 app.set('views', path.join(__dirname, viewPath));
 
 app.get('/', function(request, response) {
-  response.render('pages/index');
+  	response.render('pages/index');
 });
 
 app.listen(app.get('port'), function() {

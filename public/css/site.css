@@ -52,7 +52,12 @@ body, html {
 	animation-delay: .6s;
 }
 .divider {
-	color: #D3D3D3;
+	height:2px;
+	width:90%;
+	margin:5px auto;
+	border-top:4px solid #dfe9f2;
+	border-right:4px solid transparent;
+	border-left:4px solid transparent;
 }
 footer {
 	background-color: #4b6139;
@@ -63,20 +68,27 @@ footer {
 	font-family: 'Cabin', sans-serif;
 	font-style: italic;
 }
+.image-row {
+	width:90%;
+	margin:15px auto;
+}
+.image-row img {
+	max-width:60%;
+}
 .main {
 	position:relative;
 }
 #main-bg {
-	background: url('/static/img/main-bg-img.jpeg') no-repeat;
 	height:400px;
-	background-size:cover;
+	width:100%;
 }
 .main-bg-overlay {
+	background-color: rgba(127,165,204,.2);
 	height:400px;
 	position:absolute;
 	top:0;
-	left:15px;
-	right:15px;
+	left:0;
+	right:0;
 	bottom:0;
 	color:white;
 	font-size:4em;
@@ -106,12 +118,28 @@ footer {
 .navbar-brand {
 	height:auto;
 }
+.pitch-image {
+	padding:25px;
+}
+.pitch-image img {
+	display:inline-block;
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(147,147,147,1);
+-moz-box-shadow: 4px 4px 5px 0px rgba(147,147,147,1);
+box-shadow: 4px 4px 5px 0px rgba(147,147,147,1);
+border:1px outset #d3d3d3;
+width:100%;
+max-height:250px;
+}
 .pitch-text {
 	padding:25px;
 	width:75%;
 	float:none;
 	margin-left:auto;
 	margin-right:auto;
+}
+.row.panel {
+	width:90%;
+	margin:0 auto;
 }
 .secondary-link {
 	background-color:rgba(189,189,189,.7);
@@ -139,7 +167,7 @@ footer {
 	font-size:18px;
 }
 .single-pitch-block {
-	width:80%;
+	width:90%;
 	margin-left:auto;
 	margin-right:auto;
 	float:none;
