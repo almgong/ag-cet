@@ -48,7 +48,7 @@
 			<div class="main-bg-overlay heading">
 				<div class="main-content container-fluid">
 					<div class="row pitch">
-						<div class="col-sm-12 pitch-text text-center fadeIn animated">
+						<div class="col-sm-12 pitch-text text-center fadeIn animated text-shadow">
 							Environmental Engineering &amp; Consulting
 						</div>
 					</div>
@@ -61,12 +61,12 @@
 						</div>
 						<div class="col-sm-4">
 							<div class="secondary-link animated fadeIn delay-1">
-								<a href="">Scope of Services</a>
+								<a href="/services">Scope of Services</a>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="secondary-link animated fadeIn delay-2">
-								<a href="">Contact Us</a>
+								<a href="/contact">Contact Us</a>
 							</div>
 						</div>
 					</div>
@@ -175,13 +175,27 @@
 				<div class="bottom-content">
 					<div class="col-sm-12 single-pitch-block">
 
-						<div class="pitch-desc">
+						<div class="pitch-desc text-center">
 							<p>
-								Since 1992, CET Engineering has assisted numerous facilities to comply with various environmental rules and regulations.   Our clients include many industrial facilities and public agencies, such as:  
+								Since 1992, <span class="brand">CET Engineering</span> has assisted numerous facilities to comply with various environmental rules and regulations.   Our clients include many industrial facilities and public agencies, such as:  
 							</p>
-
+							<div class="logo-collage">
+								<img alt="Clients served" class="lazy" data-original="/static/img/logo-collage.jpg" />
+							</div>
 							<p> 
 								Our clients are aware of our technical capability and competitive costs.  References are available upon request.
+							</p>
+							<br/>
+							<P>
+								For more information, head over to our <br /><br />
+								
+								<button class="btn btn-default" onclick="window.location.href='/services'">
+									Scope of Services
+								</button> 
+								&nbsp;&nbsp; OR &nbsp;&nbsp; 
+								<button class="btn btn-default" onclick="window.location.href='/contact'">
+									Contact Us
+								</button>
 							</p>
 						</div>
 						
@@ -190,21 +204,24 @@
 			</div>
 			
 		</div>
-
+		<div class="divider"></div>
 		<footer>
 			<div class="container">
-				
-				<div class="row">
-					<div class="col-sm-4">
-					</div>
-					<div class="col-sm-4">
-					</div>
-					<div class="col-sm-4">
-						Selective icons made by Freepik from www.flaticon.com 
-					</div>
+
+				<div class="row text-center">
+					
+						<a href="/">Home</a> | <a href="/services">Scope of Services</a> | <a href="/contact">Contact Us</a>
+					
+				</div><br>
+				<div class="row text-center">
+					
+						Selective icons made by Freepik from www.flaticon.com. Web design and implementation by Allen Gong. 
+					
 				</div>
 				<div class="row text-center">
-					copyright
+					
+						Copyright &copy; CET Engineering, Inc. - All Rights Reserved
+					
 				</div>
 			</div>
 		</footer>
@@ -214,9 +231,9 @@
 	<!-- script at end of page to prevent render blocking -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="/static/js/bootstrap.min.js"></script>
-	<script src="/static/js/jquery.visible.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 	<script src="/static/js/jquery.lazyload.min.js"></script>
-	<script src="/static/js/site.js"></script>
+	<script src="/static/js/landing.js"></script>
 
 	<script type="text/javascript">
 	$(document).ready(function() {
